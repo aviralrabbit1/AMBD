@@ -1,9 +1,14 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      AMDB app
+      <Router>
+        <Routes>
+          <Route index element={<h1>AMDB app</h1>} ></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
