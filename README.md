@@ -1,1 +1,3 @@
-# AMBD
+# AMDB
+
+## IMDB clone app
