@@ -6,8 +6,8 @@ function Header() {
   return (
     <div className='header'>
         <div className='header-left'>
-            <Link className='header__link' to="/" ><img className="header__icon" src="https://archive.org/download/AMDb.se/AMDb.se.jpg" 
-            alt="icon" height="40px" width="90px" /> </Link>
+            <Link className='header__link' to="/" > <span> <img className="header__icon" 
+            src="https://archive.org/download/AMDb.se/AMDb.se.jpg" alt="icon" /></span> </Link>
             <Link className='header__link' to="/movies/popular" > <span>Popular</span> </Link>
             <Link className='header__link' to="/movies/top_rated" > <span>Top Rated</span> </Link>
             <Link className='header__link' to="/movies/upcoming" > <span>Upcoming</span> </Link>
