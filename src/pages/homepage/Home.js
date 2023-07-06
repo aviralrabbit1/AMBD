@@ -27,18 +27,17 @@ function Home() {
           >
             {
               popularMovies.map(movie => (
-                <Link key={movie.id} to={`/movies/${movie.id}`} >
+                <Link key={movie.id} to={`/movies/${movie.id}`} style={{textDecoration: "none", color:"white" }} >
                   <div className='posterImage'>
                     <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} 
                     alt={movie.original_name} />
                   </div>
                   <div className='posterImage__overlay'>
                     <div className='posterImage__runtime'>
-                      {movie ? movie.release_date: ""}
+                      {movie ? `${movie.first_air_date}   `: ""}
                       <span className='posterImage__rating'>
-                        {movie ? `${movie.vote_average} `: ""}
+                        {movie ? `   ${movie.vote_average} `: ""}
                         <i className='fas fa-star'/>{" "}
-
                       </span>
                     </div>
                     <div className='posterImage__description'>
