@@ -29,7 +29,7 @@ const Cards = ({movie}) => {
                 <div className='cards__runtime'>{movie?movie.vote_average:""}</div>
                 <i className='fas fa-star'/>{" "}
             </div>
-                <div className='cards__description'>{movie?movie.overvie.slice:""}</div>
+                <div className='cards__description'>{movie?movie.overvie.slice(0, 118)+"...":""}</div>
         </div>
   
     </Link>
@@ -37,4 +37,4 @@ const Cards = ({movie}) => {
   )
 }
 
-export default Card
+export default Cards
