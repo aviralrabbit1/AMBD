@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 // taken from https://www.npmjs.com/package/react-responsive-carousel
 
 import {Carousel} from 'react-responsive-carousel';
+import MovieList from '../../components/movieList/MovieList';
 
 
 function Home() {
@@ -49,6 +50,7 @@ function Home() {
               ))
             }
           </Carousel>
+          <MovieList/>
         </div>
     </div>
   )
