@@ -72,11 +72,11 @@ const Movie = () => {
                 </div>
             </div>
             <div className="movie__links">
-                <div className="movie__heading">Useful Links</div>
+                <span className="movie__heading">Useful Links</span>
                 {
                     currentMovieDetail && currentMovieDetail.homepage 
-                    && <a href={currentMovieDetail.homepage} target="_blank" 
-                    style={{textDecoration: "none"}}>
+                    && <a href={currentMovieDetail.homepage} 
+                    target="_blank" style={{textDecoration: "none"}}>
                         <p><span className="movie__homeButton movie__Button">Homepage 
                         <i className="newTab fas fa-external-link-alt"></i>
                         </span></p></a>
